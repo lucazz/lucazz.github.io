@@ -1,7 +1,7 @@
-baseURL = "http://saboya.pro/"
+baseURL = "https://www.saboya.pro/"
 languageCode = "en-us"
 title = "Lucas do Amaral Saboya Consultoria"
-theme = "devresume"
+theme = "resume"
 googleAnalytics = "UA-128107458-1"
 
 [params]
