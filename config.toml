@@ -105,7 +105,7 @@ details = "Leading the SRE projects refactoring continuous integration and deliv
 title = "Staff Site Reliability Engineer"
 dates = "Nov. 2019 - Present"
 company = "Aetion Inc"
-details = "Working on the company’s effort to achieve HITRUST certification. Operating infrastructure on AWS, improving developer experience, reliability and providing a faster development workflow altogether. Working on reducing toil and pushing for automation whenever possible on company’s workflows reducing human error margins. Biggest achievements includes workloads migrations out of AWS Elastic Container Service - ECS into AWS Elastic Kubernetes Service - EKS allowing the company to save on runtime costs while also enabling the ability to deploy the company’s platform on client’s own public clouds accounts/environments. Working with automation to provision the company’s AWS infrastructure with Terraform, maintaining a DRY codebase that allows SREs to provision whole new evironments faster and more realiably than before."
+details = "Working on the company’s effort to achieve HITRUST certification. Operating infrastructure on AWS, improving developer experience, reliability and providing a faster development workflow altogether. Working on reducing toil and pushing for automation whenever possible on company’s workflows reducing human error margins. Biggest achievements include workloads migrations out of AWS Elastic Container Service - ECS into AWS Elastic Kubernetes Service - EKS allowing the company to save on runtime costs while also enabling the ability to deploy the company’s platform on client’s own public clouds accounts/environments. Working with automation to provision the company’s AWS infrastructure with Terraform, maintaining a DRY codebase that allows SREs to provision whole new evironments faster and more realiably than before."
 [[params.experience.list.items]]
 details = "Workloads migration out of ECS into EKS"
 [[params.experience.list.items]]
@@ -117,15 +117,15 @@ details = "Hitrust certification."
 title = "Site Reliability Engineer"
 dates = "Aug. 2019 - Nov. 2019"
 company = "Gainbridge.life"
-details = "Leading the SRE team through the digital transformation efforts, refactoring continuous integration and delivery pipelines and enabling the development team to migrate out of a microservices infrastructure into a monolith while keeping systems stable and available. Using AWS managed services like, EKS, MSK, RDS and SSM."
+details = "Leading the SRE team through the digital transformation efforts, refactoring continuous integration and delivery pipelines and enabling the development team to migrate from a microservice infrastructure to a monolith one while keeping systems stable and available. Using AWS managed services such as EKS, MSK, RDS and SSM."
 [[params.experience.list.items]]
-details = "Workloads migration out of KOPS-managed Kubernetes clusters into EKS"
+details = "Workloads migration from KOPS-managed Kubernetes clusters tom EKS"
 [[params.experience.list.items]]
 details = "Terraform Cloud & Terraform IaC adoption"
 [[params.experience.list.items]]
 details = "Workload telemetry instrumentation"
 [[params.experience.list.items]]
-details = "Performance tuning & infrastructure costs improvements"
+details = "Performance tuning & infrastructure cost improvements"
 
 [[params.experience.list]]
 title = "Site Reliability Engineer"
@@ -135,7 +135,7 @@ details = "Operating infrastructure on multiple cloud providers, enabling faster
 [[params.experience.list.items]]
 details = "Packaged up workloads to Docker images"
 [[params.experience.list.items]]
-details = "Terraformed Kubernetes clusters in Google Cloud Platform"
+details = "Terraformed Kubernetes clusters on Google Cloud Platform"
 [[params.experience.list.items]]
 details = "Built CI/CD pipelines to deploy those workloads"
 
@@ -143,11 +143,11 @@ details = "Built CI/CD pipelines to deploy those workloads"
 title = "Site Reliability Engineer"
 dates = "Jan. 2018 - Jan. 2019"
 company = "Kairos AR Inc."
-details = "Building and maintaining Kubernetes Clusters and CI/CD pipelines operations using current techniques and tooling, such as Docker, Istio, Ansible and Jenkins. Migrating workloads across cloud providers, from Amazon Web Services with KOPS to Google Cloud Platform and GKE. Intersting projects I’ve worked on while working at Kairos was setting up a Machine Learning training pipeline so developers could issue model training jobs on Kubernetes. Having Kairos’ Kubernetes clusters take GPU resources into account when making it’s scheduling decisions for both these training jobs as well as serving those models through Tensorflow Serving."
+details = "Building and maintaining Kubernetes Clusters and CI/CD pipelines operations using current techniques and tooling, such as Docker, Istio, Ansible and Jenkins. Migrating workloads across cloud providers, from Amazon Web Services with KOPS to Google Cloud Platform and GKE. Intersting projects I’ve worked on while working at Kairos was setting up a Machine Learning training pipeline so developers could issue model training jobs on Kubernetes. Having Kairos’ Kubernetes clusters take GPU resources into account when making their scheduling decisions for both these training jobs as well as serving those models through Tensorflow Serving."
 [[params.experience.list.items]]
 details = "Deployed Tensorflow-based workloads in Kubernetes with GPUs as schedulable units"
 [[params.experience.list.items]]
-details = "Terraformed Kubernetes clusters in Google Cloud Platform & Amazon Web Services"
+details = "Terraformed Kubernetes clusters on Google Cloud Platform & Amazon Web Services"
 [[params.experience.list.items]]
 details = "Built CI/CD pipelines to deploy those workloads"
 
@@ -157,7 +157,7 @@ dates = "Aug. 2016 - Jan. 2018"
 company = "Anki Inc."
 details = "Building and maintaining CI and CD pipelines operations using current techniques and tooling, such as Docker, Ansible, Chef, OpsWorks, Jenkins and TeamCity. Designing high availability solutions to address several challenges that the company faced."
 [[params.experience.list.items]]
-details = "Built and maintained Ansible roles and modules to drive the company's cloud ifrastructure in Amazon Web Services"
+details = "Built and maintained Ansible roles and modules to drive the company's cloud ifrastructure on Amazon Web Services"
 [[params.experience.list.items]]
 details = "Built CI/CD pipelines to deploy the company's storefront & website"
 
@@ -165,7 +165,7 @@ details = "Built CI/CD pipelines to deploy the company's storefront & website"
 title = "Site Reliability Engineer"
 dates = "Jan. 2016 - Aug. 2016"
 company = "HE:labs"
-details = "Integrating a team of specialists in HE:labs, hoping in from client to client working with their cloud providers to enable faster, higher available and cheaper solutions to roll out their workloads.Writing automation tools in Python and Ruby. Identified and implement opportunities for automating existing processes in order to streamline operations and support functions."
+details = "Integrating a team of specialists in HE:labs, Working with multiple clients building or improving cloud providers automation to enable faster, highly available and cheaper solutions to roll out their workloads. Writing automation tools in Python and Ruby. Identifying and implementing opportunities for automating existing processes in order to streamline operations and support functions."
 
 [[params.experience.list]]
 title = "Support Engineer"
