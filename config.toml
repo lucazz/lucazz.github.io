@@ -25,7 +25,7 @@ enable = false
 [params.profile]
 enable = true
 name = "Lucas Saboya"
-tagline = "Staff/Senior Site Reliability Engineer"
+tagline = "Staff Site Reliability Engineer"
 avatar = "avatar.png"
 
 [params.contact]
@@ -62,7 +62,7 @@ details = "Amazon Web Services/Google Cloud Platform"
 [[params.skills.list]]
 title = "Programing Languages"
 [[params.skills.list.items]]
-details = "Bash/Golang/Python"
+details = "Bash/Golang"
 [[params.skills.list]]
 title = "Professional"
 [[params.skills.list.items]]
@@ -81,7 +81,7 @@ name = "Brazilian Portuguese"
 level = "Native"
 [[params.languages.list]]
 name = "English"
-level = "Fuent"
+level = "Fluent"
 
 [params.interests]
 enable = true
