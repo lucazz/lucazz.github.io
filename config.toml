@@ -10,39 +10,30 @@ description = "DevResume - Bootstrap 4 Resume/CV Template For Software Developer
 primaryColor = "#9580ff"
 textPrimaryColor = "#414558"
 
-[params.education]
-enable = false
-
-[params.awards]
-enable = false
-
-[params.projects]
-enable = false
-
-[params.information]
-enable = false
+[params.summary]
+enable = true
+text = "Experienced Site Reliability Engineer and DevOps specialist with a 15-year IT career that includes success in enhancing DevOps practices to streamline deployment processes, fortify system reliability, and bolster security. Passionate champion for fostering DevOps cultures, reducing failure rates for software releases, and creating seamless experiences for development teams. Effective bilingual communicator with experience in remote roles."
 
 [params.profile]
 enable = true
 name = "Lucas Saboya"
-tagline = "Staff Site Reliability Engineer"
+tagline = "Staff | Lead Site Reliability Engineer"
 avatar = "avatar.png"
 
 [params.contact]
 enable = true
 location = "Fortaleza, Brazil"
-
 [[params.contact.list]]
 icon = "fas fa-phone-square"
-url = "tel:#"
-text = "+55(85) 9-9779-4661"
+url = "tel:+5585997794661"
+text = "+55 (85) 99779-4661"
 [[params.contact.list]]
 icon = "fas fa-phone-square"
-url = "tel:#"
-text = "+1(404) 820-2124"
+url = "tel:+14048202125"
+text = "+1 (404) 820-2125"
 [[params.contact.list]]
 icon = "fas fa-envelope-square"
-url = "mailto:#"
+url = "mailto:lucas@saboya.pro"
 text = "lucas@saboya.pro"
 [[params.contact.list]]
 icon = "fas fa-globe"
@@ -56,23 +47,15 @@ title = "Technical"
 [[params.skills.list.items]]
 details = "Linux & Unix"
 [[params.skills.list.items]]
-details = "Docker & Kubernetes"
+details = "Containers & Kubernetes"
 [[params.skills.list.items]]
 details = "Amazon Web Services/Google Cloud Platform"
 [[params.skills.list]]
 title = "Programing Languages"
 [[params.skills.list.items]]
-details = "Bash/Golang"
-[[params.skills.list]]
-title = "Professional"
+details = "Bash"
 [[params.skills.list.items]]
-details = "Effective communication"
-[[params.skills.list.items]]
-details = "Team player"
-[[params.skills.list.items]]
-details = "Strong problem solver"
-[[params.skills.list.items]]
-details = "Good time management"
+details = "Golang"
 
 [params.languages]
 enable = true
@@ -90,93 +73,131 @@ name = "Investing"
 [[params.interests.list]]
 name = "Travelling"
 
-[params.summary]
-enable = true
-text = "As a dedicated Site Reliability Engineer, I passionately champion the integration of a robust DevOps culture within the organization. My commitment lies in enhancing DevOps practices to streamline deployment processes, fortify system reliability, and bolster security measures. My aim is to mitigate the failure rates of new releases and reduce the duration between issue identification and resolution, thereby strengthening system resilience in the face of adversity. I aspire to minimize deployment times and facilitate a comprehensive multi-track deployment strategy. This strategy consists of numerous checkpoints aimed at fostering a seamless experience for developers during their daily operations."
-
 [params.experience]
 enable = true
 [[params.experience.list]]
-title = "Site Reliability Engineering & DevOps Consultant"
+title = "Co-founder"
+company = "TrustD Solutions"
 dates = "Nov. 2019 - Present"
-details = "Leading the SRE projects refactoring continuous integration and delivery pipelines, public cloud infrastructures and enabling the development teams to quickly and reliably deliver software. Using AWS, Google Cloud Platform and Digital Ocean"
+details = "TrustD Solutions is an SRE and DevOps consultancy founded to bridge the gap between Brazilian workforces and US demand, providing expertise and best practices for public cloud operations, cost optimization, and system reliability." 
+[[params.experience.list.items]]
+details = "Refactored SRE strategy, introduced tooling, and staffed a DevOps team for a health-tech startup."
+[[params.experience.list.items]]
+details = "Designed and implemented the company’s full public cloud presence to include runtime infrastructure and CI/CD pipelines for a fintech startup."
+[[params.experience.list.items]]
+details = "Provided DevOps and SRE consulting services including the design and implementation of underlying infrastructure. For a software development consultancy firm."
+
 [[params.experience.list]]
 title = "Staff Site Reliability Engineer"
 dates = "Nov. 2019 - Present"
-company = "Aetion Inc"
-details = "I Worked on the company’s effort to achieve HITRUST certification. Operating infrastructure on AWS, improving developer experience and reliability, providing a faster development workflow altogether, and working on reducing toil and pushing for automation whenever possible on the company’s workflows, reducing human error margins. Biggest achievements include workloads migrations out of AWS Elastic Container Service - ECS into AWS Elastic Kubernetes Service - EKS allowing the company to save on runtime costs while also enabling the ability to deploy the company’s platform on client’s own public clouds accounts/environments and working with automation to provide the company’s AWS infrastructure with Terraform, maintaining a DRY codebase that allows SREs to provision whole new environments faster and more reliably than before."
+company = "Aetion"
+details = "Aetion is a healthcare analytics company that delivers real-world evidence for the manufacturers, purchasers, and regulators of medical treatments and technologies. Recruited by a former coworker as a Senior SRE with work focused on the HITRUST certification effort and earned promotion to Staff SRE role with responsibility for project leadership and mentoring team members." 
 [[params.experience.list.items]]
-details = "Runtime platform migration out of ECS into EKS"
+details = "Contributed to successful HITRUST certification efforts with oversight for AWS cloud infrastructure hardening."
 [[params.experience.list.items]]
-details = "Terraform Cloud & Terraform IaC adoption"
+details = "Migrated workloads from AWS ECS to EKS to reduce spending on runtime costs and enabled deployments of Aetion’s platform to client public cloud accounts. "
 [[params.experience.list.items]]
-details = "Hitrust certification."
+details = "Spearheaded Terraform Cloud adoption for AWS infrastructure."
+[[params.experience.list.items]]
+details = "Maintained a DRY codebase to enable SREs to quickly and reliably provision new environments."
+[[params.experience.list.items]]
+details = "Accelerated CI/CD pipeline execution and reduced feedback loops for developers. "
+[[params.experience.list.items]]
+details = "Authored Ansible playbooks, Python scripts, and Golang applications to automate manual, repetitive, and error-prone tasks (e.g. user access provisioning, client infrastructure provisioning, security patching, secret rotation). "
 
 [[params.experience.list]]
 title = "Site Reliability Engineer"
 dates = "Aug. 2019 - Nov. 2019"
 company = "Gainbridge.life"
-details = "Leading the SRE team through the digital transformation efforts, refactoring continuous integration and delivery pipelines, and enabling the development team to migrate from a microservice infrastructure to a monolith while keeping systems stable and available. Using AWS-managed services such as EKS, MSK, RDS, and SSM."
+details = "Gainbridge.life is an insurtech company focused on improving the process of buying and managing annuities and insurance policies. I engaged to lead an SRE team through digital transformation efforts."
 [[params.experience.list.items]]
-details = "Runtime platform migration from KOPS-managed Kubernetes clusters tom EKS"
+details = "Guided efforts to refactor CI/CD pipelines to enable development team’s migration from microservices to a monolith while maintaining systems availability."
 [[params.experience.list.items]]
-details = "Terraform Cloud & Terraform IaC adoption"
+details = "Leveraged AWS-managed services including EKS, MSK, RDS, and SSM."
 [[params.experience.list.items]]
-details = "Workload telemetry instrumentation"
+details = "Executed a runtime platform migration from KOPS-managed Kubernetes clusters to EKS."
 [[params.experience.list.items]]
-details = "Performance tuning & infrastructure cost improvements"
+details = "Oversaw implementation and adoption of Terraform Cloud and Terraform IaC."
+[[params.experience.list.items]]
+details = "Introduced observability and telemetry tooling to improve understanding of runtimes in both monolith and microservices environments. "
+[[params.experience.list.items]]
+details = "Right-sized Kubernetes clusters, node pools, and resource requirements to avoid idle compute resources within clusters while leveraging AWS' spot instances. Efforts led to ~50% reduction in infrastructure costs."
 
 [[params.experience.list]]
 title = "Site Reliability Engineer"
 dates = "Jan. 2019 - Aug. 2019"
 company = "Forestry.io"
-details = "Operating infrastructure on multiple cloud providers, enabling faster development workflows through automation. Packing apps into docker containers and migrating workloads across such cloud providers to achieve better performance, higher availability, and lowering Forestry’s cloud bills and using DigitalOcean’s Managed Kubernetes cluster and GKE clusters."
+details = "Forestry.io builds a content management system for static site generators. I was recruited to design, build, and maintain a new infrastructure architecture to support a planned feature that required execution of several parallel jobs and rendering of static site changes previews on-the-fly."
 [[params.experience.list.items]]
-details = "Packaged up workloads to Docker images"
+details = "Developed operating infrastructure on multiple cloud providers to expedite development workflows via automation. "
 [[params.experience.list.items]]
-details = "Terraformed Kubernetes clusters on Google Cloud Platform"
+details = "Leveraged Docker containers to package apps and migrated workloads across cloud providers to optimize performance, improve availability, and reduce cloud costs.  "
 [[params.experience.list.items]]
-details = "Built CI/CD pipelines to deploy those workloads"
+details = "Leveraged DigitalOcean’s Managed Kubernetes cluster and GKE clusters. Terraformed Kubernetes clusters on GCP."
+[[params.experience.list.items]]
+details = "Packaged up workloads to Docker images."
+[[params.experience.list.items]]
+details = "Built CI/CD pipelines to deploy workloads."
 
 [[params.experience.list]]
 title = "Site Reliability Engineer"
 dates = "Jan. 2018 - Jan. 2019"
 company = "Kairos AR Inc."
-detauls = "I worked on building and maintaining Kubernetes Clusters and CI/CD pipeline operations using current techniques and tooling, such as Docker, Istio, Ansible, and Jenkins, and migrating workloads across cloud providers, from Amazon Web Services with KOPS to Google Cloud Platform and GKE. An interesting project I’ve worked on at Kairos was setting up a Machine Learning training pipeline so developers could issue model training jobs on Kubernetes. Having Kairos’ Kubernetes clusters consider GPU resources when making their scheduling decisions for both these training jobs and serving those models through Tensorflow Serving."
+details = "Kairos AR builds facial recognition and emotion analysis software powered by AI and ML. Hired as the company’s first SRE to build and maintain all underlying runtime infrastructure and CI/CD pipelines."
 [[params.experience.list.items]]
-details = "Deployed Tensorflow-based workloads in Kubernetes with GPUs as schedulable units"
+details = "Guided successful migration from AWS into GCP and deployed replicas of the Kairos API and its underlying dependencies to AliCloud."
 [[params.experience.list.items]]
-details = "Terraformed Kubernetes clusters on Google Cloud Platform & Amazon Web Services"
+details = "Built, deployed, and maintained an MLOps pipeline to support Kairos' latest API improvements and features."
 [[params.experience.list.items]]
-details = "Built CI/CD pipelines to deploy those workloads"
+details = "Created Grafana dashboards to monitor and alert Aerospike deployments that remain the most downloaded today."
+[[params.experience.list.items]]
+details = "Deployed Tensorflow-based workloads in Kubernetes with GPUs as schedulable units."
+[[params.experience.list.items]]
+details = "Terraformed Kubernetes clusters on GCP and AWS."
+[[params.experience.list.items]]
+details = "Built CI/CD pipelines on Jenkins and Travis CI to deploy workloads."
 
 [[params.experience.list]]
 title = "Site Reliability Engineer"
 dates = "Aug. 2016 - Jan. 2018"
 company = "Anki Inc."
-details = "Building and maintaining CI and CD pipeline operations using current techniques and tooling, such as Docker, Ansible, Chef, OpsWorks, Jenkins, and TeamCity. Designing high-availability solutions to address several challenges that the company faced."
+details = "Anki was a robotics and AI company best known for consumer-friendly products (Anki Drive & Overdrive, Cozmo robot). Joined to refactor and improve Anki's main website and e-commerce platform's CI/CD pipeline, and transitioned to the platform team focused on API infrastructure. "
 [[params.experience.list.items]]
-details = "Built and maintained Ansible roles and modules to drive the company's cloud ifrastructure on Amazon Web Services"
+details = "Built and maintained CI/CD pipeline operations using Docker, Ansible, Chef, OpsWorks, Jenkins, and TeamCity."
 [[params.experience.list.items]]
-details = "Built CI/CD pipelines to deploy the company's storefront & website"
+details = "Delivered playbooks for provisioning infrastructure for data science and robotics teams."
+[[params.experience.list.items]]
+details = "Built and maintained Ansible roles and modules to drive Anki cloud infrastructure on AWS."
+[[params.experience.list.items]]
+details = "Refactored CI/CD pipelines used to deploy Anki’s storefront and website."
 
 [[params.experience.list]]
 title = "Site Reliability Engineer"
 dates = "Jan. 2016 - Aug. 2016"
 company = "HE:labs"
-details = "Integrating a team of specialists in HE:labs, Working with multiple clients building or improving cloud providers automation to enable faster, highly available and cheaper solutions to roll out their workloads. Writing automation tools in Python and Ruby. Identifying and implementing opportunities for automating existing processes in order to streamline operations and support functions."
+details = "HE:labs is a technology consulting firm focused on digital transformation and software development. Hired in a remote role to an Agile team with work focused on automation to build, package, and deploy Rails apps."
+[[params.experience.list.items]]
+details = "Partnered with multiple clients in building cloud provider automation to enable faster, highly available, and cheaper solutions to roll out workloads."
+[[params.experience.list.items]]
+details = "Built Ansible playbooks & automation tools in Python and Ruby."
 
 [[params.experience.list]]
 title = "Support Engineer"
 dates = "Jan. 2015 - Dec. 2015"
 company = "iFactory Solutions"
-details = "Integrating the Amazon Web Service (AWS) Managed Services Team, OpenText CEM Customer Support subcontractor, responsible for drafting support, deployment and maintenance best practices and automation of cloud hosted services"
+details = "iFactory is a digital agency specializing in web design, development, and digital marketing. Joined a team responsible for supporting OpenText CEM deployments and AWS for US-based clients."
+[[params.experience.list.items]]
+details = "Co-authored support, deployment, and maintenance best practices"
 
 [[params.experience.list]]
 title = "Computer Networks Analyst"
 dates = "Jan. 2008 - Jan. 2015"
 company = "Instito Federal do Ceará (IFCE)"
-details = "Integrating the Computer Security Incident Response Team - CSIRT, Mitigating IFCE’s network security issues, Managing the Rectory rewalls, Providing level II networking and security support to other campuses tech staff, Supervisioning IFCE’s IPv6 networks deployment"
+details = "Integrating the Computer Security Incident Response Team - CSIRT, Mitigating IFCE’s network security issues, Managing the Rectory rewalls, Providing level II networking and security support to other campuses tech staff."
+[[params.experience.list.items]]
+details = "IPv6 networks deployment"
+[[params.experience.list.items]]
+details = "VMWare vSphere deployment"
 
 [params.social]
 enable = true
@@ -193,3 +214,15 @@ title = "in/lucazz"
 icon = "fab fa-twitter-square"
 url = "//twitter.com/lucazz"
 title = "@lucazz"
+
+[params.education]
+enable = false
+
+[params.awards]
+enable = false
+
+[params.projects]
+enable = false
+
+[params.information]
+enable = false 
