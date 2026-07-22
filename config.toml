@@ -76,6 +76,36 @@ name = "Travelling"
 [params.experience]
 enable = true
 [[params.experience.list]]
+title = "Senior Software Engineer II"
+dates = "May 2026 - Present"
+company = "Doximity"
+details = "Doximity is a digital platform for U.S. medical professionals. Promoted to lead cross-team platform initiatives, define durable technical direction, and improve reliability, automation, and developer enablement."
+[[params.experience.list.items]]
+details = "Leading delivery of a GitOps-managed AI agent runtime on EKS, beginning with the slow-query-fixer workload."
+[[params.experience.list.items]]
+details = "Building image pipelines with dedicated ECR repositories and workflows for building, scanning, signing, and promoting images."
+[[params.experience.list.items]]
+details = "Establishing Cilium egress controls, workload SLOs, Grafana dashboards, structured Loki logging, and staged rollout gates."
+[[params.experience.list.items]]
+details = "Coordinating implementation across Infrastructure Services, Automation, Security, and SRE teams."
+
+[[params.experience.list]]
+title = "Senior Software Engineer I"
+dates = "May 2025 - May 2026"
+company = "Doximity"
+details = "Joined Doximity's infrastructure organization to modernize CI systems, strengthen platform reliability, and improve operational self-service."
+[[params.experience.list.items]]
+details = "Led migration from EC2-based GitHub Actions runners to Kubernetes using GitHub ARC and decommissioned the legacy infrastructure."
+[[params.experience.list.items]]
+details = "Authored Nexus's first fixture-driven pytest suite, covering cleanup policies, permissions, users, realms, and SAML configuration."
+[[params.experience.list.items]]
+details = "Added structured logging and Grafana dashboards for runner availability, resource usage, and saturation."
+[[params.experience.list.items]]
+details = "Automated EKS upgrades, provisioning validation, teardown testing, and nightly scale-down of development clusters."
+[[params.experience.list.items]]
+details = "Improved contributor onboarding through architecture documentation, operational guides, examples, and reusable tooling."
+
+[[params.experience.list]]
 title = "Co-founder"
 company = "TrustD Solutions"
 dates = "Nov. 2019 - Present"
