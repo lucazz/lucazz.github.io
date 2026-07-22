@@ -1,18 +1,15 @@
 
-                            <section class="project-section py-3">
-
-                                <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "projects" }}</h3>
-
-                                {{ range .Site.Params.projects.list }}
-                                <div class="item mb-3">
-                                    <div class="item-heading row align-items-center mb-2">
-                                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">{{ .title }}</h4>
-                                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">{{ .meta }}</div>
-                                    </div>
-                                    <div class="item-content">
-                                        <p>{{ .tagline }}</p>
-                                    </div>
-                                </div><!--//item-->
-                                {{ end }}
-
-                            </section><!--//project-section-->
+<section class="resume-section project-section">
+    <h3 class="resume-section-heading">{{ i18n "projects" }}</h3>
+    {{ range .Site.Params.projects.list }}
+    <div class="resume-item">
+        <div class="resume-item-heading">
+            <h4 class="resume-item-title">{{ .title }}</h4>
+            <div class="resume-item-meta">{{ .meta }}</div>
+        </div>
+        <div class="resume-item-content">
+            <p>{{ .tagline }}</p>
+        </div>
+    </div>
+    {{ end }}
+</section>

@@ -1,212 +1,269 @@
-/*!
- * Template Name: DevResume - Bootstrap 4 Resume/CV Template for Software Developers
- * Version: 1.0
- * Author: Xiaoying Riley
- * Copyright: 3rd Wave Media
- * Twitter: @3rdwave_themes
- * License: Creative Commons Attribution 3.0 License
- * Website: http://themes.3rdwavemedia.com/
-*/
+$text-primary: #292929;
+$text-secondary: #5d5d5d;
+$text-muted: #9e9e9e;
+$border: rgba(41, 41, 41, 0.1);
+$screen-background: #f6f6f5;
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$mobile-breakpoint: 768px;
 
-/*************************** Theme Colours****************************/
-// Define theme colour scheme
-$theme-color-primary: {{ .Site.Params.primaryColor | default "#54B689" }};
-$theme-text-color-primary: {{ .Site.Params.textPrimaryColor | default "#292929" }};
-$theme-text-color-secondary: lighten($theme-text-color-primary, 15%);
-$theme-text-color-light: lighten($theme-text-color-primary, 40%);
-$theme-border-color:  lighten($theme-text-color-primary, 60%);
+* {
+  box-sizing: border-box;
+}
 
-/*************************** Variables Section. *****************************/
-// Create variables to override the default value for variables used in the Bootstrap SCSS files.
-$gray-100: lighten($theme-text-color-primary, 60%);
-$gray-200: lighten($theme-text-color-primary, 55%);
-$gray-300: lighten($theme-text-color-primary, 50%);
-$gray-400: lighten($theme-text-color-primary, 45%);
-$gray-500: lighten($theme-text-color-primary, 40%);
-$gray-600: lighten($theme-text-color-primary, 30%);
-$gray-700: lighten($theme-text-color-primary, 20%);
-$gray-800: lighten($theme-text-color-primary, 10%);
-$gray-900: $theme-text-color-primary;
-
-$theme-colors: (
-  "primary":  $theme-color-primary,
-  "secondary":  $theme-text-color-secondary,
-);
-
-/*************************** Import Bootstrap  *****************************/
-@import "bootstrap/scss/bootstrap.scss";
-
-
-/*************************** DevResume Styles ****************************/
-
-/*********** Theme Generic **********/
 body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: $theme-text-color-secondary;
-
+  margin: 0;
+  background: $screen-background;
+  color: $text-secondary;
+  font-family: $font-family;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -0.15px;
+  line-height: 1.55;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	color: $theme-text-color-primary;
-	font-weight: bold;
+a {
+  color: inherit;
+}
+a:hover {
+  color: $text-primary;
 }
 
-a.theme-link {
-	color: $theme-text-color-primary;
-	text-decoration: underline;
-    -webkit-text-decoration-color: rgba($theme-text-color-primary,0.3);
-    text-decoration-color: rgba($theme-text-color-primary,0.3);
-    &:hover {
-	    color: $theme-color-primary;
-	    -webkit-text-decoration-color: rgba($theme-color-primary,0.8);
-	        text-decoration-color: rgba($theme-color-primary,0.8);
-    }
+.site-shell {
+  padding: 32px 24px;
 }
-
-.btn {
-	font-weight: bold;
-	padding: .375rem 1rem;
-	height: 2.5rem;
-	font-size: 1rem;
+.resume {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px;
+  border: 1px solid $border;
+  border-radius: 16px;
+  background: #fff;
 }
-
-.btn:focus, .btn.focus {
-	box-shadow: none !important;
+.resume-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 32px;
+  align-items: start;
 }
-
-.btn-primary {
-	color: #fff;
-}
-
-.demo-btn-on-bg {
-	background: rgba(0, 0, 0, 0.2);
-	&:hover {
-		background: rgba(0, 0, 0, 0.3);
-	}
-}
-
-/*********** Resume **********/
-.resume-wrapper {
-	border: 1px solid rgba(0, 0, 0, 0.025);
-}
-
-.resume-section-heading {
-	position: relative;
-	padding-left: 1rem;
-	font-size: 1.125rem;
-	letter-spacing: 0.15rem;
-	color: $theme-color-primary;
-   &:before {
-	   content: "";
-	    display: inline-block;
-	    width: 5px;
-	    height: 100%;
-	    background: $theme-color-primary;
-	    position: absolute;
-	    left: 0;
-	    top: 0;
-   }
-}
-
 .resume-name {
-	font-size: 2.75rem;
-	font-weight: 900;
-	letter-spacing: 0.4rem;
-	color: $theme-color-primary;
-
+  margin: 0;
+  color: $text-primary;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.15;
 }
-
 .resume-tagline {
-	font-size: 1.25rem;
-	font-weight: 300;
+  margin-top: 8px;
+  color: $text-secondary;
+  font-size: 14px;
 }
-
 .resume-contact {
-	border-left: 1px solid rgba(0, 0, 0, 0.08);
-	font-size: 0.75rem;
+  font-size: 12px;
 }
-
-a.resume-link {
-	color: $theme-text-color-secondary;
-	&:hover {
-		color: $theme-color-primary;
-	}
+.resume-contact-list,
+.resume-social-list,
+.resume-detail-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-.resume-profile-image {
-	max-width: 120px;
+.resume-contact-list {
+  display: grid;
+  gap: 8px;
 }
-
+.resume-contact-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.resume-contact-icon,
+.resume-social-icon {
+  width: 14px;
+  font-size: 14px;
+  color: $text-muted;
+  text-align: center;
+}
+.resume-link {
+  text-decoration: none;
+}
+.resume-divider {
+  margin: 24px 0;
+  border: 0;
+  border-top: 1px solid $border;
+}
 .resume-intro {
-	font-size: 0.875rem;
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
-.resume-main {
-	.item-title {
-		font-size: 1rem;
-	}
-
-   .item-meta {
-	   font-size: 0.75rem;
-   }
-   .item-content {
-		font-size: 0.875rem;
-	}
+.resume-profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 14px;
+  object-fit: cover;
 }
-
+.resume-summary {
+  font-size: 13px;
+}
+.resume-summary p,
+.resume-item-content p {
+  margin: 0;
+}
+.resume-body {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(180px, 1fr);
+  gap: 32px;
+}
 .resume-aside {
-	border-left: 1px solid rgba(0, 0, 0, 0.08);
-	.item {
-		font-size: 0.875rem;
-	}
-	.item-title {
-		font-size: 1rem;
-	}
-
+  padding-left: 24px;
+  border-left: 1px solid $border;
 }
-
-
-.resume-education-list, .resume-awards-list {
-    font-size: 0.875rem;
+.resume-section + .resume-section {
+  margin-top: 24px;
 }
-
-
-.resume-degree-time-org, .resume-degree-time {
-	font-size: 0.75rem;
+.resume-section-heading {
+  margin: 0 0 16px;
+  color: $text-primary;
+  font-size: 13px;
+  font-weight: 500;
 }
-
-.resume-lang-list, .resume-interests-list {
-	font-size: 0.875rem;
+.resume-item {
+  break-inside: avoid;
+  padding-bottom: 16px;
 }
-
+.resume-item + .resume-item {
+  padding-top: 16px;
+  border-top: 1px solid $border;
+}
+.resume-item-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+.resume-item-title {
+  margin: 0;
+  color: $text-primary;
+  font-size: 14px;
+  font-weight: 500;
+}
+.resume-item-meta {
+  flex: 0 0 auto;
+  color: $text-muted;
+  font-size: 12px;
+  text-align: right;
+}
+.resume-item-content {
+  font-size: 13px;
+}
+.resume-list {
+  margin: 8px 0 0;
+  padding-left: 16px;
+}
+.resume-detail-list {
+  display: grid;
+  gap: 8px;
+  font-size: 12px;
+}
+.resume-detail-item {
+  break-inside: avoid;
+}
+.muted {
+  color: $text-muted;
+}
+.resume-footer {
+  padding-top: 0;
+}
 .resume-social-list {
-	font-size: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  font-size: 12px;
+}
+.resume-social-item .resume-link {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+.site-footer {
+  width: 100%;
+  max-width: 1100px;
+  margin: 24px auto 0;
+  color: $text-muted;
+  font-size: 12px;
+  text-align: center;
+}
+.site-footer p {
+  margin: 0;
 }
 
-
-.fa-heart {
-	color: #fb866a;
+@media (max-width: $mobile-breakpoint - 1px) {
+  .site-shell {
+    padding: 16px;
+  }
+  .resume {
+    padding: 24px;
+  }
+  .resume-header,
+  .resume-body {
+    grid-template-columns: 1fr;
+  }
+  .resume-header {
+    gap: 16px;
+  }
+  .resume-intro {
+    align-items: flex-start;
+  }
+  .resume-profile-image {
+    width: 64px;
+    height: 64px;
+  }
+  .resume-aside {
+    padding: 24px 0 0;
+    border-top: 1px solid $border;
+    border-left: 0;
+  }
+  .resume-item-heading {
+    display: block;
+  }
+  .resume-item-meta {
+    margin-top: 4px;
+    text-align: left;
+  }
 }
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {
-
-    .resume-aside {
-	    border-left: 0;
-    }
+@media print {
+  body {
+    background: #fff;
+  }
+  .site-shell {
+    padding: 0;
+  }
+  .resume {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+  }
+  .resume-body {
+    display: block;
+  }
+  .resume-aside {
+    padding: 24px 0 0;
+    border-top: 1px solid $border;
+    border-left: 0;
+  }
+  .site-footer {
+    margin-top: 24px;
+  }
+  .resume-item,
+  .resume-detail-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
 }
-
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-	.resume-contact {
-	    border-left: 0;
-    }
-}
-
-
-
-
-
-
-

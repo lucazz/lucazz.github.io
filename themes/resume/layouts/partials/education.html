@@ -1,16 +1,13 @@
 
-                            <section class="education-section py-3">
-
-                                <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "education" }}</h3>
-
-                                <ul class="list-unstyled resume-education-list">
-                                    {{ range .Site.Params.education.list }}
-                                    <li class="mb-3">
-                                        <div class="resume-degree font-weight-bold">{{ .degree }}</div>
-                                        <div class="resume-degree-org text-muted">{{ .university }}</div>
-                                        <div class="resume-degree-time text-muted">{{ .dates }}</div>
-                                    </li>
-                                    {{ end }}
-                                </ul>
-
-                            </section><!--//education-section-->
+<section class="resume-section education-section">
+    <h3 class="resume-section-heading">{{ i18n "education" }}</h3>
+    <ul class="resume-detail-list">
+        {{ range .Site.Params.education.list }}
+        <li class="resume-detail-item">
+            <div>{{ .degree }}</div>
+            <div class="muted">{{ .university }}</div>
+            <div class="muted">{{ .dates }}</div>
+        </li>
+        {{ end }}
+    </ul>
+</section>

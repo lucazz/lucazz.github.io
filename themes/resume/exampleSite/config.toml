@@ -1,7 +1,7 @@
 # Page settings
 
 baseURL = "http://example.org/"
-languageCode = "en"
+locale = "en"
 title = ""
 theme = "hugo-devresume-theme"
 googleAnalytics = "UA-XXXXXXX-Y"
@@ -302,7 +302,6 @@ googleAnalytics = "UA-XXXXXXX-Y"
         icon = "fab fa-twitter-square"
         url = "//twitter.com/username"
         title = "@username"
-
 
 
 
