@@ -5,19 +5,16 @@ theme = "resume"
 googleAnalytics = "UA-128107458-1"
 
 [params]
-author = "CowboySmall"
 description = "Site Reliability Engineer and DevOps resume for Lucas Saboya"
-primaryColor = "#9580ff"
-textPrimaryColor = "#414558"
 
 [params.summary]
 enable = true
-text = "Experienced Site Reliability Engineer and DevOps specialist with a 15-year IT career that includes success in enhancing DevOps practices to streamline deployment processes, fortify system reliability, and bolster security. Passionate champion for fostering DevOps cultures, reducing failure rates for software releases, and creating seamless experiences for development teams. Effective bilingual communicator with experience in remote roles."
+text = "Senior platform and reliability engineer with 18 years of experience turning ambiguous infrastructure problems into scalable, secure systems and clear technical direction. Leads cross-team initiatives spanning Kubernetes, cloud platforms, CI/CD, observability, testing, and automation, with a track record of modernizing delivery systems, improving reliability, and reducing operational cost. Known as a collaborative force multiplier who pairs hands-on execution with durable documentation, reusable tooling, and stronger ownership patterns."
 
 [params.profile]
 enable = true
 name = "Lucas Saboya"
-tagline = "Staff | Lead Site Reliability Engineer"
+tagline = "DevOps | Site Reliability | Platform Engineer"
 avatar = "avatar.png"
 
 [params.contact]
@@ -35,10 +32,6 @@ text = "+1 (404) 820-2125"
 icon = "fas fa-envelope-square"
 url = "mailto:lucas@saboya.pro"
 text = "lucas@saboya.pro"
-[[params.contact.list]]
-icon = "fas fa-globe"
-url = "https://saboya.pro"
-text = "saboya.pro"
 
 [params.skills]
 enable = true
@@ -50,12 +43,9 @@ details = "Linux & Unix"
 details = "Containers & Kubernetes"
 [[params.skills.list.items]]
 details = "Amazon Web Services/Google Cloud Platform"
+[[params.skills.list.items]]
+details = "Bash, Golang and Python"
 [[params.skills.list]]
-title = "Programing Languages"
-[[params.skills.list.items]]
-details = "Bash"
-[[params.skills.list.items]]
-details = "Golang"
 
 [params.languages]
 enable = true
@@ -69,9 +59,9 @@ level = "Fluent"
 [params.interests]
 enable = true
 [[params.interests.list]]
-name = "Investing"
-[[params.interests.list]]
 name = "Travelling"
+[[params.interests.list]]
+name = "Home automation"
 
 [params.experience]
 enable = true
@@ -93,7 +83,7 @@ details = "Coordinating implementation across Infrastructure Services, Automatio
 title = "Senior Software Engineer I"
 dates = "May 2025 - May 2026"
 company = "Doximity"
-details = "Joined Doximity's infrastructure organization to modernize CI systems, strengthen platform reliability, and improve operational self-service."
+details = "Doximity is a digital platform for U.S. medical professionals. Promoted to lead cross-team platform initiatives, define durable technical direction, and improve reliability, automation, and developer enablement."
 [[params.experience.list.items]]
 details = "Led migration from EC2-based GitHub Actions runners to Kubernetes using GitHub ARC and decommissioned the legacy infrastructure."
 [[params.experience.list.items]]
@@ -236,14 +226,6 @@ enable = true
 icon = "fab fa-github-square"
 url = "//github.com/lucazz"
 title = "@lucazz"
-[[params.social.list]]
-icon = "fab fa-linkedin"
-url = "//linkedin.com/in/lucazz"
-title = "in/lucazz"
-[[params.social.list]]
-icon = "fab fa-twitter-square"
-url = "//twitter.com/lucazz"
-title = "@lucazz"
 
 [params.education]
 enable = false
@@ -255,4 +237,4 @@ enable = false
 enable = false
 
 [params.information]
-enable = false 
+enable = false
