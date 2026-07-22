@@ -23,7 +23,7 @@ designed for developers by Xiaoying Riley.
 
 - Fully Responsive
 - HTML5 + CSS3
-- Built on Bootstrap 4
+- Built with semantic HTML and SCSS
 - 1000+ FontAwesome icons
 - SCSS source files included
 - Compatible with all modern browsers

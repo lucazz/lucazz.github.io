@@ -4,7 +4,7 @@
 name = "DevResume"
 license = "MIT"
 licenselink = "//github.com/cowboysmall-tools/hugo-devresume-theme/blob/master/LICENSE.md"
-description = "DevResume is a free Bootstrap 4 resume/CV template made for software developers."
+description = "DevResume is a resume/CV theme made for software developers."
 homepage = "//github.com/cowboysmall-tools/hugo-devresume-theme"
 tags = ["cv", "resume"]
 features = ["responsive"]
